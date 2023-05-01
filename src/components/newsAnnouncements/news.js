@@ -4,12 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
 const News = () => {
-  // Rest of the code...
-
   return (
     <div className="flex flex-wrap content-center justify-center h-auto mt-14">
-      {/* Rest of the code... */}
-
       <div className="w-2/5 content-container">
         <div className="title">
           <h1 className="mb-2 font-bold text-red-800">

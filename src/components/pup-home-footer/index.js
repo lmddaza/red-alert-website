@@ -67,7 +67,7 @@ const Footer = () => {
     { type: "Email", info: "inquire@pup.edu.ph" },
   ];
   return (
-    <div className="flex flex-wrap content-center pt-10 justify-center bg-neutral-100 print:flex-col print:h-auto print:items-start h-full">
+    <div className="flex flex-wrap flex-col content-center pt-10 justify-center bg-neutral-100 print:flex-col print:h-auto print:items-start">
       <div className="flex flex-wrap content-center w-3/4 h-80 footer-links-container-container">
         <div className="footer-links">
           <p>ONLINE SERVICES</p>
@@ -127,23 +127,6 @@ const Footer = () => {
                 {contacts.type}: <span>{contacts.info}</span>
               </li>
             ))}
-          </ul>
-          <p>PUPWEBSITE 10</p>
-          <ul className="flex weblinks">
-            <li>
-              <a href="#">Terms of Use</a>|
-            </li>
-            <li>
-              <a href="#" className="pl-1">
-                Privacy Statement
-              </a>
-              |
-            </li>
-            <li>
-              <a href="#" className="pl-1">
-                About PUPWebsite
-              </a>
-            </li>
           </ul>
         </div>
         <div className="flex flex-wrap content-center justify-center w-full h-10 pt-10 pb-10 text-xs credit">

@@ -25,7 +25,7 @@ const IconLinks = () => {
   ];
 
   return (
-    <div className="flex flex-wrap items-center justify-center border-b border-grey other-links-container">
+    <div className="flex flex-wrap items-center justify-center border-grey other-links-container">
       {iconLinks.map((iconLink, index) => (
         <a href={iconLink.link} className="other-links" key={index}>
           <div className={`icon-container ${iconLink.margin}`}>
@@ -46,7 +46,7 @@ const IconLinks = () => {
               </svg>
             </div>
           </div>
-          <p className="text-center">{iconLink.title}</p>
+          <p className="text-center title-color">{iconLink.title}</p>
         </a>
       ))}
     </div>

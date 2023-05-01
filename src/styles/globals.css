@@ -91,4 +91,45 @@ a {
   html {
     color-scheme: dark;
   }
+  .other-links-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 20px;
+  }
+  
+  .other-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+  }
+  
+  .icon-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid grey;
+    height: 70px;
+    width: 70px;
+  }
+  
+  @media (max-width: 640px) {
+    .other-links-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 }
