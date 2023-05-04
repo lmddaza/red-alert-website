@@ -48,6 +48,7 @@ const Hehe = () => {
     },
   ];
   const images = [
+    { src: "/senrisa.jpg" },
     { src: "/img1.jpg" },
     { src: "/img2.jpg" },
     { src: "/img3.jpg" },
