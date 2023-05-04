@@ -3,10 +3,10 @@ import { Formik, Field, Form } from "formik";
 
 const TopNavbar2 = () => {
   const topNav2links = [
-    { link: "#", title: "ABOUT PUP" },
-    { link: "#", title: "ACADEMIC" },
-    { link: "#", title: "STUDENTS" },
-    { link: "#", title: "RESEARCH" },
+    { link: "https://www.pup.edu.ph/about/", title: "ABOUT PUP" },
+    { link: "https://www.pup.edu.ph/academic/", title: "ACADEMIC" },
+    { link: "https://www.pup.edu.ph/students/", title: "STUDENTS" },
+    { link: "https://www.pup.edu.ph/researcher/", title: "RESEARCH" },
   ];
 
   return (
@@ -71,7 +71,7 @@ const TopNavbar2 = () => {
           </Formik>
         </div>
       </div>
-      <button disabled className="flex mt-3 text-white md:hidden burger">
+      <button disabled className="flex mt-3 text-white md:hidden button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

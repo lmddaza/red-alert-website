@@ -2,18 +2,21 @@ import Image from "next/image";
 
 const Footer2 = () => {
   const aboutGovPh = [
-    { link: "#", title: "Official Gazette" },
-    { link: "#", title: "Open Data Portal" },
+    { link: "https://www.gov.ph/", title: "Official Gazette" },
+    { link: "https://data.gov.ph/index/home", title: "Open Data Portal" },
   ];
 
   const govLinks = [
-    { link: "#", title: "Office of the President" },
-    { link: "#", title: "Office of the Vice President" },
-    { link: "#", title: "Senate of the Philippines" },
-    { link: "#", title: "House of Representatives" },
-    { link: "#", title: "Supreme Court" },
-    { link: "#", title: "Court of Appeals" },
-    { link: "#", title: "Sandiganbayan" },
+    { link: "https://president.gov.ph/", title: "Office of the President" },
+    { link: "https://ovp.gov.ph/", title: "Office of the Vice President" },
+    {
+      link: "http://legacy.senate.gov.ph/",
+      title: "Senate of the Philippines",
+    },
+    { link: "https://www.congress.gov.ph/", title: "House of Representatives" },
+    { link: "https://sc.judiciary.gov.ph/", title: "Supreme Court" },
+    { link: "https://ca.judiciary.gov.ph/", title: "Court of Appeals" },
+    { link: "https://sb.judiciary.gov.ph/", title: "Sandiganbayan" },
   ];
 
   return (

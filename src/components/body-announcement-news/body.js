@@ -56,23 +56,35 @@ const Hehe = () => {
   ];
   const pupNews = [
     {
-      src: "/news1.jpg",
-      title: "PHIVOLCS commits to training PUP on REDAS",
-      link: "#",
+      src: "/senrisa.jpg",
+      title: "Sen. Risa graces EMO's F2F gender sensitivity training",
+      link: "https://www.pup.edu.ph/news/?go=4Mw1A2BcZqM%3d",
       date: "April 26, 2023",
     },
     {
       src: "/news2.jpg",
       title: "Earth Day 2023 celebrated through the arts",
-      link: "#",
+      link: "https://www.pup.edu.ph/news/?go=dYaPs7vM0Ic%3d",
       date: "April 26, 2023",
     },
     {
       src: "/news3.jpg",
       title:
         "DBM Sec. Pangandaman and DepEd Usec Jumamil-Mercado receives Tanglaw ng Bayan Award",
-      link: "",
+      link: "https://www.pup.edu.ph/news/?go=am95eppGNbE%3d",
       date: "April 25, 2023",
+    },
+    {
+      src: "/news4.jpg",
+      title: "PUP partners with 350 Pilipinas on Climate Deals",
+      link: "https://www.pup.edu.ph/news/?go=am95eppGNbE%3d",
+      date: "April 25, 2023",
+    },
+    {
+      src: "/news1.jpg",
+      title: "PHIVOLCS commits to training PUP on REDAS",
+      link: "https://www.pup.edu.ph/news/?go=JOKQ2xizTIA%3d",
+      date: "April 26, 2023",
     },
   ];
   const [slideIndex, setSlideIndex] = useState(0);
