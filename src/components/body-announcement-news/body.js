@@ -48,7 +48,6 @@ const Hehe = () => {
     },
   ];
   const images = [
-    { src: "/senrisa.jpg" },
     { src: "/img1.jpg" },
     { src: "/img2.jpg" },
     { src: "/img3.jpg" },
@@ -57,7 +56,7 @@ const Hehe = () => {
   ];
   const pupNews = [
     {
-      src: "/senrisa.jpg",
+      src: "/senrisa.JPG",
       title: "Sen. Risa graces EMO's F2F gender sensitivity training",
       link: "https://www.pup.edu.ph/news/?go=4Mw1A2BcZqM%3d",
       date: "April 26, 2023",
