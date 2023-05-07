@@ -5,7 +5,9 @@ import TopNavbar2 from "@/components/top-navbar-2";
 import ContactUs from "@/components/contactUs/contactUs";
 import Footer from "@/components/pup-home-footer";
 import Footer2 from "@/components/pup-home-footer2";
-import FloatingButton from "@/components/floating-icon/floating";
+import FloatingButton from "@/components/modal/floating";
+import Modal from "@/components/modal/modal";
+import Link from "next/link"; // Import Link component
 
 function App() {
   const [articles, setArticles] = useState([]);
@@ -25,11 +27,14 @@ function App() {
     <div className="App">
       <TopNavbar />
       <TopNavbar2 />
-
+      <Modal />
       <Articles articles={articles} />
       <Footer />
       <Footer2 />
       <FloatingButton />
+      <Link href="/" legacyBehavior>
+        <a>Home</a>
+      </Link>
     </div>
   );
 }

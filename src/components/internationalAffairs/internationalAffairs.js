@@ -8,7 +8,7 @@ export default function Articles({ articles }) {
   }
 
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-1">
       <div className="col-span-1 internationalContents">
         <h1 className="contactus-heading ">International Affairs</h1>
         <Image
@@ -78,7 +78,7 @@ export default function Articles({ articles }) {
           </li>
         </ul>
         <Link href="/">
-          <a className="h1-link">Articles</a>
+          <span className="h1-link">Articles</span>
         </Link>
         <div className="columns">
           <div className="column">

@@ -5,6 +5,366 @@
 * {
   box-sizing: border-box;
 }
+// MAIN SLIDER START
+.slider {
+  position: relative;
+  z-index: -1;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -2;
+}
+.main-slider:hover{
+  z-index: 1;
+}
+
+.main-slider button{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+// MAIN SLIDER END
+
+// LATEST NEWS START
+.news-img{
+  height: 480px;
+  object-fit: cover;
+}
+
+.slider-buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 52px;
+}
+
+.news-slider-btn{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 22px;
+  width: 22px;
+  background-color: #fff;
+  color: #ccc;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  transition: .4s ease-in-out;
+}
+
+.news-slider-btn:hover{
+  background-color: #800;
+  color: #fff;
+}
+
+.arrowStyles{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.3);        border-radius: 0;
+  width: 100px;
+  height: 100px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: opacity 0.5s ease;
+  color: #fff;
+}
+
+.arrowStyles:hover{
+  color: #888;
+  background-color: #111;
+}
+
+
+ 
+
+.main-slider button{
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.news-img{
+  height: 480px;
+  object-fit: cover;
+}
+
+.slider-buttons-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 52px;
+}
+.top-nav-link {
+  color: #800;
+  z-index: 9999;
+}
+.top-navbar-link li{
+  display: flex;
+  padding: 5px 12px 5px 12px;
+  height: 40px;
+  align-items: center;
+  transition: .2s;
+  color: #666666;
+  z-index: 9999;
+}
+
+.nav-container li:hover{
+  color: white;
+  background-color: #800;
+  cursor: pointer;
+}
+
+.top-navbar2-links li{
+  margin-right: 40px;
+  z-index: 9999;
+}
+
+.nav, .nav2{
+  width: 1170px;
+}
+
+.contact{
+  transition: .2s;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #666666;
+}
+
+.nav-container, .nav2-container{
+  backdrop-filter: blur(2px) saturate(60%);
+
+}
+.nav2-container h2, .footer-links a{
+  color: #666666;
+}
+
+.navbar-container{
+  background-image: url(/bg.jpg);
+
+    background-image: url(/bg.jpg);
+    position: relative; /* add this to make z-index work */
+    z-index: 1; /* add this to set a z-index for the parent container */
+  
+}
+
+.search{
+  height: 28px;
+  width: 175px;
+  border: .5px solid grey;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  font-size: 12px;
+  outline: none;
+}
+
+.burger{
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80px;
+  height: 60px;
+  border: 2px solid #fff;
+}
+
+// DROPDOWN
+
+.dropdown-container{
+  // display: none;
+  visibility: hidden;
+  position: absolute;
+  background-color: hsla(0,0%,100%,.88);
+  width: 300px;
+  height: auto;
+  box-shadow:0px 20px 44px 0px rgb(0 0 0 / 68%);
+  backdrop-filter: blur(10px) saturate(168%) !important;
+  border-radius: 8px;
+  border: .5px solid #800;
+  margin-top: 6px;
+  transform: translateX(-14px);
+  z-index: 9999;
+   z-index: 2;
+  
+}
+
+.dropdown-container li{
+  width: 100%;
+  padding: 10px 15px 10px;
+  color: #666666;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  font-size: 14px;
+  font-weight:300;
+  border-radius: 8px;
+  font-family:Arial, Helvetica, sans-serif;
+  z-index: 9999;
+}
+
+.dropdown-container li:hover{
+  background-color: #fff;
+  color: #800;
+  padding-left: 17px;
+}
+
+.pup-links li:hover > .dropdown-container{
+  visibility: visible;
+}
+
+
+@media screen and (max-width: 768px){
+
+  // NAV  
+  .nav2-container{
+      background-color: rgb(102, 22, 22);
+      background-image: none;
+      border-bottom: .5px solid #fff;
+  }
+  .top-navbar-links img{
+      transform: scale(2.5);
+      margin-right: 150px;
+  }
+  .nav2-container img{
+      transform: scale(1.3);
+  }
+  .nav2{
+      width: auto;
+  }
+}
+
+.topNav2link link{
+  color: #800;
+}
+.topNav2link a{
+  color: #800;
+}
+.bg-modal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(20px) saturate(168%);
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  flex-wrap: wrap;
+  left: 0;
+}
+
+.modal-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #fff url(https://www.pup.edu.ph/resources/images/photos/bg1.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 900px;
+  height: 600px;
+  left: 50%;
+  top: 330px;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  animation: float-in .5s forwards;
+  padding: 10px;
+}
+.btnCancel{
+  border: none;
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  transform: rotate(45deg);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  color:#000;
+  opacity: .2;
+}
+.btnCancel:hover{
+  opacity: .5;
+}
+
+.modal-content p{
+  color: #666;
+}
+
+.modal-items-container{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  padding: 0 15px 0 15px;
+}
+
+.modal-links-container{
+  transition: .2s;
+}
+
+.modal-links-container p{
+  color: #fff;
+}
+@keyframes float-in {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -150%) scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes float-out {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -150%) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(1);
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .modal-content{
+    width: 100%;
+    height: auto;
+    top: 840px;
+  }
+  .btnCancel{
+    font-size: 48px;
+  }
+  .logo-container img{
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+  }
+  .logos-container{
+    transform: scale(1.5);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .modal-items-container{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .grid {
     display: flex;

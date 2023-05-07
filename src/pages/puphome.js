@@ -6,19 +6,21 @@ import Hehe from "@/components/body-announcement-news/body";
 import SocialMedia from "@/components/socialMedia/socialmedia";
 import Footer from "@/components/pup-home-footer";
 import Footer2 from "@/components/pup-home-footer2";
-import FloatingButton from "@/components/floating-icon/floating";
+
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
 
-const Home = () => {
+import FloatingButton from "@/components/modal/floating";
+import Modal from "@/components/modal/modal";
+const PUP = () => {
   return (
     <div className="flex flex-col flex-wrap justify-center">
       <TopNavbar />
       <TopNavbar2 />
       <Slider />
-
+      <Modal />
       <IconLinks />
       <Hehe />
       <SocialMedia />
@@ -29,4 +31,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default PUP;

@@ -1,17 +1,11 @@
 import Image from "next/image";
 import { Formik, Field, Form } from "formik";
+import { topNav2links } from "src/helpers/nav_data.js";
 
 const TopNavbar2 = () => {
-  const topNav2links = [
-    { link: "https://www.pup.edu.ph/about/", title: "ABOUT PUP" },
-    { link: "https://www.pup.edu.ph/academic/", title: "ACADEMIC" },
-    { link: "https://www.pup.edu.ph/students/", title: "STUDENTS" },
-    { link: "https://www.pup.edu.ph/researcher/", title: "RESEARCH" },
-  ];
-
   return (
     <div className="flex flex-wrap content-center justify-between h-32 px-8 md:justify-center md:h-24 nav2-container md:px-0">
-      <div className="flex flex-wrap justify-between w:full md:w-3/4">
+      <div className="flex flex-wrap justify-between pl-0 nav2 md:pl-5">
         <div className="flex">
           <div>
             <a href="#">
@@ -31,11 +25,18 @@ const TopNavbar2 = () => {
                 </h2>
               </a>
             </div>
-            <div className="flex-wrap content-center h-6 font-bold top-navbar2-links mt-3.5 ">
-              <ul className="flex inline font-serif text-sm text-red-800">
+            <div className="flex-wrap content-center h-6 font-bold top-navbar2-links mt-3.5">
+              <ul className="flex inline font-serif text-sm text-red-800 pup-links">
                 {topNav2links.map((topNav2link, index) => (
-                  <li key={index}>
+                  <li key={index} className="h-7">
                     <a href={topNav2link.link}>{topNav2link.title}</a>
+                    <ul className="dropdown-container" style={{ zIndex: 10 }}>
+                      {topNav2link.subLinks.map((subLink, subIndex) => (
+                        <a key={subIndex} href={subLink.url}>
+                          <li>{subLink.subLinkTitle}</li>
+                        </a>
+                      ))}
+                    </ul>
                   </li>
                 ))}
               </ul>
@@ -55,13 +56,13 @@ const TopNavbar2 = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
-                    class="w-4 h-4"
+                    className="w-4 h-4"
                   >
                     <path
                       strokeLinecap="round"
-                      stroke-linejoin="round"
+                      strokeLinejoin="round"
                       d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
                     />
                   </svg>
@@ -73,16 +74,17 @@ const TopNavbar2 = () => {
       </div>
       <button disabled className="flex mt-3 text-white md:hidden button">
         <svg
-          xmlns="http://www.w3.org/2000/svg"
+          xmlns="
+http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5"
           stroke="currentColor"
-          class="w-12 h-12"
+          className="w-12 h-12"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
