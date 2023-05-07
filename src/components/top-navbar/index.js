@@ -5,7 +5,7 @@ const TopNavbar = () => {
   const router = useRouter();
 
   const topNavLinks = [
-    { link: "/pup.edu", title: "Home", class: "" },
+    { link: "/puphome", title: "Home", class: "" },
     {
       link: "https://www.pup.edu.ph/goodgovernance/2022/",
       title: "Good Governance",
@@ -22,7 +22,7 @@ const TopNavbar = () => {
       class: "hidden lg:flex",
     },
     {
-      link: "",
+      link: "https://www.pup.edu.ph/bidnotices/",
       title: "Bid Notices and Invitation",
       class: "hidden md:flex",
     },
