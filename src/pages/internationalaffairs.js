@@ -8,6 +8,7 @@ import Footer2 from "@/components/pup-home-footer2";
 import FloatingButton from "@/components/modal/floating";
 import Modal from "@/components/modal/modal";
 import Link from "next/link"; // Import Link component
+import { topNav2links } from "src/helpers/nav_data.js";
 
 function App() {
   const [articles, setArticles] = useState([]);
