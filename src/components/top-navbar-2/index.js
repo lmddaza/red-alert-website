@@ -30,7 +30,7 @@ const TopNavbar2 = () => {
                 {topNav2links.map((topNav2link, index) => (
                   <li key={index} className="h-7">
                     <a href={topNav2link.link}>{topNav2link.title}</a>
-                    <ul className="dropdown-container" style={{ zIndex: 10 }}>
+                    <ul className="dropdown-container">
                       {topNav2link.subLinks.map((subLink, subIndex) => (
                         <a key={subIndex} href={subLink.url}>
                           <li>{subLink.subLinkTitle}</li>
@@ -72,10 +72,9 @@ const TopNavbar2 = () => {
           </Formik>
         </div>
       </div>
-      <button disabled className="flex mt-3 text-white md:hidden button">
+      <button disabled className="flex mt-3 text-white md:hidden mobile-menu">
         <svg
-          xmlns="
-http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"

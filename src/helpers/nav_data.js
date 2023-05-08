@@ -10,7 +10,7 @@ export const topNav2links = [
       { subLinkTitle: "Hymn", url: "#" },
       { subLinkTitle: "Annual Reports", url: "#" },
       { subLinkTitle: "Awards and Recognitions", url: "#" },
-      { subLinkTitle: "Contact us", url: "#" },
+      { subLinkTitle: "Contact us", url: "/internationalaffairs" },
       { subLinkTitle: "Maps", url: "#" },
       { subLinkTitle: "University Code", url: "#" },
       { subLinkTitle: "Institutional Development Plan", url: "#" },

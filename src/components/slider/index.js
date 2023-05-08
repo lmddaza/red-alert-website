@@ -18,20 +18,7 @@ const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const arrowStyles = {
-    position: "absolute",
-    top: "50%",
-    transform: "translateY(-50%)",
-    zIndex: 2,
-    backgroundColor: "#555",
     opacity: isHovered ? 0.5 : 0,
-    borderRadius: 0,
-    width: "100px",
-    height: "100px",
-    border: "none",
-    outline: "none",
-    cursor: "pointer",
-    fontSize: "1.5em",
-    transition: "opacity 0.3s ease",
   };
   const handlePrevClick = () => {
     setSlideIndex((slideIndex - 1 + images.length) % images.length);
@@ -41,33 +28,65 @@ const Slider = () => {
     setSlideIndex((slideIndex + 1) % images.length);
   };
 
+  const customIndicator = (onClickHandler, isSelected, index, label) => {
+    const indicatorSize = 20;
+    const style = {
+      width: `${indicatorSize}px`,
+      height: `${indicatorSize}px`,
+      margin: "0 5px",
+      cursor: "pointer",
+      borderRadius: "50%",
+      backgroundColor: isSelected ? "#fff" : "#555",
+      transition: "opacity 0.5s ease",
+      opacity: isHovered ? 0.7 : 0,
+    };
+    return (
+      <li
+        className={`${isSelected ? "selected" : ""} inline-block pb-5`}
+        style={style}
+        onClick={onClickHandler}
+        onKeyDown={onClickHandler}
+        role="button"
+        tabIndex="0"
+        aria-label={`${label} ${index + 1}`}
+      />
+    );
+  };
+
   return (
     <div
-      className="slider"
+      className="main-slider"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ position: "relative" }}
     >
-      <Carousel
-        showThumbs={false}
-        showStatus={false}
-        infiniteLoop={true}
-        selectedItem={slideIndex}
-        onChange={(index) => setSlideIndex(index)}
-        showArrows={false}
+      <div className="carousel-slider-container">
+        <Carousel
+          showThumbs={false}
+          showStatus={false}
+          infiniteLoop={true}
+          selectedItem={slideIndex}
+          onChange={(index) => setSlideIndex(index)}
+          showArrows={false}
+          renderIndicator={customIndicator}
+          autoPlay
+        >
+          {images.map((image, index) => (
+            <div key={index}>
+              <img src={image.src} alt={`Image ${index}`} />
+            </div>
+          ))}
+        </Carousel>
+      </div>
+      <button
+        onClick={handlePrevClick}
+        style={{ ...arrowStyles, left: 0 }}
+        className="arrowStyles"
       >
-        {images.map((image, index) => (
-          <div key={index}>
-            <img src={image.src} alt={`Image ${index}`} />
-          </div>
-        ))}
-      </Carousel>
-      <button onClick={handlePrevClick} style={{ ...arrowStyles, left: 0 }}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={3}
+          strokeWidth={4}
           stroke="currentColor"
           className="w-10 h-10"
         >
@@ -78,12 +97,16 @@ const Slider = () => {
           />
         </svg>
       </button>
-      <button onClick={handleNextClick} style={{ ...arrowStyles, right: 0 }}>
+      <button
+        onClick={handleNextClick}
+        style={{ ...arrowStyles, right: 0 }}
+        className="arrowStyles"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          strokeWidth={3}
+          strokeWidth={4}
           stroke="currentColor"
           className="w-10 h-10"
         >

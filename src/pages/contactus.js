@@ -1,23 +1,38 @@
-import TopNavbar from "@/components/top-navbar";
-import TopNavbar2 from "@/components/top-navbar-2";
 import ContactUs from "@/components/contactUs/contactUs";
-import Footer from "@/components/pup-home-footer";
-import Footer2 from "@/components/pup-home-footer2";
-import { topNav2links } from "src/helpers/nav_data.js";
-import FloatingButton from "@/components/modal/floating";
-import Modal from "@/components/modal/modal";
+import React, { useEffect, useState } from "react";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Link from "next/link"; // Import Link component
+import TopNavbar from "src/components/top-navbar/index.js";
+import TopNavbar2 from "src/components/top-navbar-2";
+import Slider from "src/components/slider/index.js";
+import SocialMedia from "@/components/socialMedia/socialmedia";
+import Footer from "src/components/pup-home-footer/index.js";
+import Footer2 from "src/components/pup-home-footer2/index.js";
+import Image from "next/image";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
+import {
+  announcements,
+  iconLinks,
+  pupNews,
+  images,
+} from "src/helpers/main_data.js";
+import Modal from "src/components/modal/modal.js";
 
 const InternationalAffairs = () => {
   return (
     <div className="flex flex-col flex-wrap justify-center">
-      <TopNavbar />
-      <TopNavbar2 />
+      <div className="navbar-container">
+        <TopNavbar />
+        <TopNavbar2 />
+      </div>
       <ContactUs />
 
       <Footer />
       <Footer2 />
       <Modal />
-      <FloatingButton />
     </div>
   );
 };
