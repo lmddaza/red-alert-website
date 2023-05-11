@@ -72,46 +72,46 @@ const ContactUs = () => {
         <h2 className="hello">CONTENTS</h2>
         <ul>
           <li>
-            <Link href="/vision-mission">University Profile</Link>
+            <Link href="#">University Profile</Link>
           </li>
           <li>
-            <Link href="/vision-mission">Vision and Mission</Link>
+            <Link href="#">Vision and Mission</Link>
           </li>
           <li>
-            <Link href="/history">History</Link>
+            <Link href="#">History</Link>
           </li>
           <li>
-            <Link href="/logo-symbols">Logo and Symbols</Link>
+            <Link href="#">Logo and Symbols</Link>
           </li>
           <li>
-            <Link href="/hymn">Hymn</Link>
+            <Link href="#">Hymn</Link>
           </li>
           <li>
-            <Link href="/annual-reports">Annual Reports</Link>
+            <Link href="#">Annual Reports</Link>
           </li>
           <li>
-            <Link href="/vision-mission">Awards and Recognitions</Link>
+            <Link href="#">Awards and Recognitions</Link>
           </li>
           <li>
-            <Link href="/history">Contact Information</Link>
+            <Link href="#">Contact Information</Link>
           </li>
           <li>
-            <Link href="/logo-symbols">Maps</Link>
+            <Link href="#">Maps</Link>
           </li>
           <li>
-            <Link href="/hymn">Board of Regents</Link>
+            <Link href="#">Board of Regents</Link>
           </li>
           <li>
-            <Link href="/annual-reports">Executive Officials</Link>
+            <Link href="#">Executive Officials</Link>
           </li>
           <li>
-            <Link href="/history">Organization Structure</Link>
+            <Link href="#">Organization Structure</Link>
           </li>
           <li>
-            <Link href="/logo-symbols">Institutional Development Plan</Link>
+            <Link href="#">Institutional Development Plan</Link>
           </li>
           <li>
-            <Link href="/hymn">Quality Policy Statement</Link>
+            <Link href="#">Quality Policy Statement</Link>
           </li>
           <li>
             <Link href="/annual-reports">University Calendar</Link>

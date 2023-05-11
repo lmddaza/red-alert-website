@@ -14,55 +14,58 @@ export default function Articles({ articles }) {
   return (
     <div className="grid grid-cols-2 gap-1">
       <div className="col-span-1 internationalContents">
-        <h1 className="contactus-heading ">International Affairs</h1>
-        <Image
+        <h1 className="contactus-heading">International Affairs</h1>
+        <img
           src={"/internationalAffairs.JPG"}
           alt="ffairs"
-          width={957}
-          height={950}
+          layout="responsive"
         />
       </div>
+
       <div className="col-span-1 affairsContents">
         <h2 className="hello">CONTENTS</h2>
         <ul>
           <li>
-            <Link href="/vision-mission">Office of International Affairs</Link>
+            <Link href="#">Office of International Affairs</Link>
           </li>
           <li>
-            <Link href="/vision-mission">Objective and Functions</Link>
+            <Link href="#">Objective and Functions</Link>
           </li>
           <li>
-            <Link href="/history">Services</Link>
+            <Link href="#">Services</Link>
           </li>
           <li>
-            <Link href="/logo-symbols">International Linkages</Link>
+            <Link href="#">International Linkages</Link>
           </li>
           <li>
-            <Link href="/hymn">Qualifications and Requirements</Link>
+            <Link href="#">Qualifications and Requirements</Link>
           </li>
           <li>
-            <Link href="/annual-reports">Frequently Asked Questions</Link>
+            <Link href="#">Frequently Asked Questions</Link>
           </li>
           <li>
-            <Link href="/vision-mission">Officials and Staff</Link>CLES
+            <Link href="#">Officials and Staff</Link>CLES
           </li>
           <li>
-            <Link href="/history">Contact Information</Link>
+            <Link href="#">Contact Information</Link>
           </li>
         </ul>
       </div>
       <div className="articles-container">
-        <p>
-          The PUP Office of International Affairs is engaged in a wide variety
-          of programs and activities aligned with the vision of President Manuel
-          M. Muhi towards establishment of PUP as a National Polytechnic
-          University.
-          <br></br> <br></br>
-          Thus, the Office for International Affairs provides leadership and
-          coordination for all University-wide international activities for
-          coherence and integration of the institutions international linkages,
-          cooperation, exchanges, programs and services:
-        </p>
+        <div className="responsive">
+          <p>
+            The PUP Office of International Affairs is engaged in a wide variety
+            of programs and activities aligned with the vision of President
+            Manuel M. Muhi towards establishment of PUP as a National
+            Polytechnic University.
+            <br />
+            <br />
+            Thus, the Office for International Affairs provides leadership and
+            coordination for all University-wide international activities for
+            coherence and integration of the institutions international
+            linkages, cooperation, exchanges, programs and services:
+          </p>
+        </div>
 
         <ul className="affairs-list">
           <li>
