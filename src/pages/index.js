@@ -1,6 +1,8 @@
 import TopNavbar from "src/components/top-navbar/index.js";
 import TopNavbar2 from "src/components/top-navbar-2";
 import Slider from "src/components/slider/index.js";
+import IconLinks from "@/components/iconss/icons";
+import Body from "src/components/body-announcement-news/body.js";
 import SocialMedia from "@/components/socialMedia/socialmedia";
 import Footer from "src/components/pup-home-footer/index.js";
 import Footer2 from "src/components/pup-home-footer2/index.js";
@@ -8,12 +10,7 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState, useEffect } from "react";
-import {
-  announcements,
-  iconLinks,
-  pupNews,
-  images,
-} from "src/helpers/main_data.js";
+
 import Modal from "src/components/modal/modal.js";
 
 const Home = () => {
@@ -26,8 +23,6 @@ const Home = () => {
   const handleNextClick = () => {
     setSlideIndex((slideIndex + 1) % pupNews.length);
   };
-
-  //
 
   const [showButton, setShowButton] = useState(false);
 
@@ -79,123 +74,9 @@ const Home = () => {
       >
         <i className="fa fa-angle-up"></i>
       </button>
-      <div className="flex flex-wrap content-center justify-center border-b-[1px] border-grey h-52 other-links-container">
-        {iconLinks.map((iconLink, index) => (
-          <a href={iconLink.link} className="other-links" key={index}>
-            <div className={`icon-container ${iconLink.margin}`}>
-              <div className="text-3xl icon-border">
-                <i className={`fa ${iconLink.d}`}></i>
-              </div>
-            </div>
-            <p className="mt-2">{iconLink.title}</p>
-          </a>
-        ))}
-      </div>
-      <div className="flex flex-wrap content-center justify-center h-auto mt-14 ">
-        <div className="flex flex-wrap w-3/4 h-auto content-container-container">
-          <div className="w-full content-container md:w-2/5">
-            <div className="mb-4 title">
-              <h1 className="mb-2 font-bold text-red-800">
-                Announcements and Advisories
-              </h1>
-            </div>
-            <div className="flex flex-wrap overflow-auto overflow-x-hidden content">
-              {announcements.map((announcement, index) => (
-                <div key={index} className="announcements">
-                  <a href={announcement.link}>{announcement.title}</a>
-                  <p>Posted: {announcement.date}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="w-full content-container md:w-2/5 md:h-96 news-slider">
-            <div className="title">
-              <h1 className="mb-2 font-bold text-red-800">
-                Latest News from the University
-              </h1>
-              <div className="slider-buttons-container">
-                <button onClick={handlePrevClick} className="news-slider-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="currentColor"
-                    className="w-3 h-3"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.75 19.5L8.25 12l7.5-7.5"
-                    />
-                  </svg>
-                </button>
-                <button onClick={handleNextClick} className="news-slider-btn">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={4}
-                    stroke="currentColor"
-                    className="w-3 h-3"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div className="pt-5 pr-5 ehe">
-              <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                selectedItem={slideIndex}
-                onChange={(index) => setSlideIndex(index)}
-                showIndicators={false}
-                showArrows={false}
-                autoPlay
-                className="news-slider"
-              >
-                {pupNews.map((news, index) => (
-                  <div key={index} className="flex flex-col flex-wrap">
-                    <div>
-                      <img
-                        src={news.src}
-                        alt={`Image ${index}`}
-                        className="news-img"
-                      />
-                    </div>
-                    <div className="flex flex-col pt-5 pl-2 hover:underline">
-                      <a
-                        href={news.link}
-                        className="h-auto font-semibold text-left"
-                      >
-                        {news.title}
-                      </a>
-                      <p className="text-left">{news.date}</p>
-                    </div>
-                  </div>
-                ))}
-              </Carousel>
-            </div>
-          </div>
-          <div className="flex flex-col flex-wrap content-center justify-center w-full content-container md:w-1/5">
-            {images.map((image, index) => (
-              <a
-                href="#"
-                key={index}
-                className="flex flex-wrap justify-center mb-2 img-container"
-              >
-                <Image src={image.src} alt="" width={200} height={150} />
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+
+      <IconLinks />
+      <Body />
       <SocialMedia />
       <Modal />
       <Footer />

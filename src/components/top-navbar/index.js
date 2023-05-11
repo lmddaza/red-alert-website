@@ -7,12 +7,12 @@ const TopNavbar = () => {
   const topNavLinks = [
     { link: "/puphome", title: "Home", class: "" },
     {
-      link: "https://www.pup.edu.ph/goodgovernance/2022/",
+      link: "#",
       title: "Good Governance",
       class: "hidden md:flex",
     },
     {
-      link: "https://www.pup.edu.ph/goodgovernance/transparency/2023/",
+      link: "#",
       title: "Transparency",
       class: "hidden md:flex",
     },
@@ -22,7 +22,7 @@ const TopNavbar = () => {
       class: "hidden lg:flex",
     },
     {
-      link: "https://www.pup.edu.ph/bidnotices/",
+      link: "#",
       title: "Bid Notices and Invitation",
       class: "hidden md:flex",
     },

@@ -1,7 +1,11 @@
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useState, useEffect } from "react";
+
+import Modal from "src/components/modal/modal.js";
 export default function Articles({ articles }) {
   if (!articles || !Array.isArray(articles)) {
     return null;
@@ -40,7 +44,7 @@ export default function Articles({ articles }) {
             <Link href="/annual-reports">Frequently Asked Questions</Link>
           </li>
           <li>
-            <Link href="/vision-mission">Officials and Staff</Link>
+            <Link href="/vision-mission">Officials and Staff</Link>CLES
           </li>
           <li>
             <Link href="/history">Contact Information</Link>
@@ -77,19 +81,22 @@ export default function Articles({ articles }) {
             <span>&#8226;</span> International Organizations Affiliation
           </li>
         </ul>
-        <Link href="/">
+        <br></br>
+        <Link href="#">
           <span className="h1-link">Articles</span>
         </Link>
+        <br></br>
         <div className="columns">
           <div className="column">
             <div className="image-container">
               {articles.length > 0 && (
-                <a href={`/${articles[0].id}`}>
+                <a href={`#${articles[0].id}`}>
                   <Image
                     src="/paris.jpg"
                     alt="Column 1"
                     width={257}
                     height={950}
+                    className="article-paris"
                   />
                 </a>
               )}
@@ -99,15 +106,17 @@ export default function Articles({ articles }) {
               .map((article) => (
                 <div key={article.id} className="article-container">
                   <br></br>
-                  <a href={`/${article.id}`}>{article.title}</a>
+                  <a href={`#${article.id}`} className="article-title">
+                    {article.title}
+                  </a>
                 </div>
               ))}
           </div>
           <div className="column">
             <div className="image-container">
-              <a href={`/${articles[1]?.id}`}>
+              <a href={`#${articles[1]?.id}`}>
                 <Image
-                  src="/paris.jpg"
+                  src="/canyon.jpg"
                   alt="Column 2"
                   width={257}
                   height={950}
@@ -122,18 +131,20 @@ export default function Articles({ articles }) {
               .map((article) => (
                 <div key={article.id} className="article-container">
                   <br></br>
-                  <a href={`/${article.id}`}>{article.title}</a>
+                  <a href={`#${article.id}`} className="article-title">
+                    {article.title}
+                  </a>
                 </div>
               ))}
           </div>
           <div className="column">
             <div className="image-container">
-              <a href={`/${articles[2]?.id}`}>
+              <a href={`#${articles[2]?.id}`}>
                 <Image
-                  src="/paris.jpg"
+                  src="/tanzaniaa.jpg"
                   alt="Column 3"
                   width={257}
-                  height={950}
+                  height={650}
                 />
               </a>
             </div>
@@ -142,7 +153,9 @@ export default function Articles({ articles }) {
               .map((article) => (
                 <div key={article.id} className="article-container">
                   <br></br>
-                  <a href={`/${article.id}`}>{article.title} </a>
+                  <a href={`#${article.id}`} className="article-title">
+                    {article.title}
+                  </a>
                 </div>
               ))}
           </div>
@@ -153,21 +166,48 @@ export default function Articles({ articles }) {
 }
 
 export async function getStaticPaths() {
-  const response = await fetch("https://api.ahglab.com/api:W7k9W8HQ/articles");
-  const data = await response.json();
-  const paths = data.map((article) => ({
-    params: { id: article.id.toString() },
-  }));
-  return { paths, fallback: false };
+  try {
+    const response = await fetch(
+      "https://api.ahglab.com/api:W7k9W8HQ/articles"
+    );
+    const data = await response.json();
+
+    if (!Array.isArray(data)) {
+      throw new Error("API response is not an array.");
+    }
+
+    const paths = data.map((article) => ({
+      params: { id: article.id.toString() },
+    }));
+
+    return { paths, fallback: false };
+  } catch (error) {
+    console.error("Error in getStaticPaths:", error);
+    // Handle the error or return a fallback value if necessary
+    throw error;
+  }
 }
 
 export async function getStaticProps({ params }) {
-  const response = await fetch("https://api.ahglab.com/api:W7k9W8HQ/articles");
-  const data = await response.json();
-  const articles = data.map((article) => ({
-    id: article.id,
-    title: article.title,
-  }));
+  try {
+    const response = await fetch(
+      "https://api.ahglab.com/api:W7k9W8HQ/articles"
+    );
+    const data = await response.json();
 
-  return { props: { articles } };
+    if (!Array.isArray(data)) {
+      throw new Error("API response is not an array.");
+    }
+
+    const articles = data.map((article) => ({
+      id: article.id,
+      title: article.title,
+    }));
+
+    return { props: { articles } };
+  } catch (error) {
+    console.error("Error in getStaticProps:", error);
+    // Handle the error or return a fallback value if necessary
+    throw error;
+  }
 }

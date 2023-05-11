@@ -1,7 +1,23 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { Logos, ModalLinks } from "src/helpers/modal_data.js";
+
 import { Services } from "src/components/floating-buttons/floatingbutton.js";
+export const Logos = [
+  { src: "/transparencyseal.png", width: "100", height: "100" },
+  { src: "/freedom-bg.png", width: "100", height: "100" },
+  { src: "/soco.jpg", width: "126", height: "20" },
+];
+9;
+export const ModalLinks = [
+  { link: "#", title: "Applicant", d: "fa-pencil-square" },
+  { link: "#", title: "Student", d: "fa-book" },
+  { link: "#", title: "Faculty Member or Employee", d: "fa-users" },
+  { link: "#", title: "Researcher or Extensionist", d: "fa-flask" },
+  { link: "#", title: "Alumni", d: "fa-graduation-cap" },
+  { link: "#", title: "Campus Life", d: "fa-institution" },
+  { link: "#", title: "Institutional Accreditation", d: "fa-edit" },
+  { link: "#", title: "View Homepage", d: "fa-align-justify" },
+];
 
 const Modal = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
