@@ -64,7 +64,7 @@ export const images = [
 
 export const pupNews = [
   {
-    src: "/news1.jpg",
+    src: "/senrisa.JPG",
     title: "PHIVOLCS commits to training PUP on REDAS",
     link: "#",
     date: "April 26, 2023",
@@ -200,7 +200,7 @@ const Body = () => {
                 </button>
               </div>
             </div>
-            <div className="pt-5 pr-5 ehe">
+            <div className="pt-5 pr-5 sliders">
               <Carousel
                 showThumbs={false}
                 showStatus={false}
