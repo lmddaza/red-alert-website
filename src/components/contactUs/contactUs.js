@@ -72,52 +72,83 @@ const ContactUs = () => {
         <h2 className="hello">CONTENTS</h2>
         <ul>
           <li>
-            <Link href="#">University Profile</Link>
+            <Link href="#" className="link">
+              University Profile
+            </Link>
           </li>
           <li>
-            <Link href="#">Vision and Mission</Link>
+            <Link href="#" className="link">
+              Vision and Mission
+            </Link>
           </li>
           <li>
-            <Link href="#">History</Link>
+            <Link href="#" className="link">
+              History
+            </Link>
           </li>
           <li>
-            <Link href="#">Logo and Symbols</Link>
+            <Link href="#" className="link">
+              Logo and Symbols
+            </Link>
           </li>
           <li>
-            <Link href="#">Hymn</Link>
+            <Link href="#" className="link">
+              Hymn
+            </Link>
           </li>
           <li>
-            <Link href="#">Annual Reports</Link>
+            <Link href="#" className="link">
+              Annual Reports
+            </Link>
           </li>
           <li>
-            <Link href="#">Awards and Recognitions</Link>
+            <Link href="#" className="link">
+              Awards and Recognitions
+            </Link>
           </li>
           <li>
-            <Link href="#">Contact Information</Link>
+            <Link href="#" className="link">
+              Contact Information
+            </Link>
           </li>
           <li>
-            <Link href="#">Maps</Link>
+            <Link href="#" className="link">
+              Maps
+            </Link>
           </li>
           <li>
-            <Link href="#">Board of Regents</Link>
+            <Link href="#" className="link">
+              Board of Regents
+            </Link>
           </li>
           <li>
-            <Link href="#">Executive Officials</Link>
+            <Link href="#" className="link">
+              Executive Officials
+            </Link>
           </li>
           <li>
-            <Link href="#">Organization Structure</Link>
+            <Link href="#" className="link">
+              Organization Structure
+            </Link>
           </li>
           <li>
-            <Link href="#">Institutional Development Plan</Link>
+            <Link href="#" className="link">
+              Institutional Development Plan
+            </Link>
           </li>
           <li>
-            <Link href="#">Quality Policy Statement</Link>
+            <Link href="#" className="link">
+              Quality Policy Statement
+            </Link>
           </li>
           <li>
-            <Link href="/annual-reports">University Calendar</Link>
+            <Link href="/annual-reports" className="link">
+              University Calendar
+            </Link>
           </li>
         </ul>
       </div>
+
       <div className="telephone">
         <h1 className="telephone">Postal Mail and Telephone</h1>
         <h2 className="telephone">

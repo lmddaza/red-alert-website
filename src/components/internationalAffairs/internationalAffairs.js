@@ -26,31 +26,48 @@ export default function Articles({ articles }) {
         <h2 className="hello">CONTENTS</h2>
         <ul>
           <li>
-            <Link href="#">Office of International Affairs</Link>
+            <Link href="#" className="link">
+              Office of International Affairs
+            </Link>
           </li>
           <li>
-            <Link href="#">Objective and Functions</Link>
+            <Link href="#" className="link">
+              Objective and Functions
+            </Link>
           </li>
           <li>
-            <Link href="#">Services</Link>
+            <Link href="#" className="link">
+              Services
+            </Link>
           </li>
           <li>
-            <Link href="#">International Linkages</Link>
+            <Link href="#" className="link">
+              International Linkages
+            </Link>
           </li>
           <li>
-            <Link href="#">Qualifications and Requirements</Link>
+            <Link href="#" className="link">
+              Qualifications and Requirements
+            </Link>
           </li>
           <li>
-            <Link href="#">Frequently Asked Questions</Link>
+            <Link href="#" className="link">
+              Frequently Asked Questions
+            </Link>
           </li>
           <li>
-            <Link href="#">Officials and Staff</Link>CLES
+            <Link href="#" className="link">
+              Officials and Staff
+            </Link>
           </li>
           <li>
-            <Link href="#">Contact Information</Link>
+            <Link href="#" className="link">
+              Contact Information
+            </Link>
           </li>
         </ul>
       </div>
+
       <div className="articles-container">
         <div className="responsive">
           <p>
