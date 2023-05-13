@@ -10,6 +10,7 @@ import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState, useEffect } from "react";
+import { NextSeo } from "next-seo";
 
 import Modal from "src/components/modal/modal.js";
 
@@ -45,6 +46,10 @@ const Home = () => {
 
   return (
     <div className="flex flex-col flex-wrap justify-center">
+      <NextSeo
+        title="Polytechnic University of the Philippines"
+        description="Homepage"
+      />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"

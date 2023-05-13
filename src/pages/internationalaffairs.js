@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Articles from "src/components/internationalAffairs/internationalAffairs.js";
+import { NextSeo } from "next-seo";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Link from "next/link"; // Import Link component
@@ -31,6 +32,12 @@ function App() {
 
   return (
     <div className="App">
+      <NextSeo
+        title="Polytechnic University of the Philippines | International Affairs Office"
+        description="International Affairs Office"
+        // Add more SEO configurations here
+      />
+
       <div className="navbar-container">
         <TopNavbar />
         <TopNavbar2 />
