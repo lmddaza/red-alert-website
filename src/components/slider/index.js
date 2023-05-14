@@ -1,19 +1,20 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useState } from "react";
+import Image from "next/image";
 
 const Slider = () => {
   const images = [
-    { src: "https://i.imgur.com/Shm8d5a.jpg" },
-    { src: "https://i.imgur.com/KtfenQC.jpg" },
-    { src: "https://i.imgur.com/LysW4od.jpg" },
-    { src: "https://i.imgur.com/h7C66lI.jpg" },
-    { src: "https://i.imgur.com/GC0dTGx.jpg" },
-    { src: "https://i.imgur.com/e8kj4pH.jpg" },
-    { src: "https://i.imgur.com/vE1uxZe.jpg" },
-    { src: "https://i.imgur.com/ROfBqoJ.jpg" },
+    { src: "/imageone.jpg" },
+    { src: "/imagetwo.jpg" },
+    { src: "/imagethree.jpg" },
+    { src: "/imagetwo.jpg" },
+    { src: "/imagethree.jpg" },
+    { src: "/imagetwo.jpg" },
+    { src: "/imagethree.jpg" },
+    { src: "/imageone.jpg" },
   ];
-
+  // Rest of the code
   const [isHovered, setIsHovered] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
 

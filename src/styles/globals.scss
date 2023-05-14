@@ -18,7 +18,7 @@
   filter: grayscale(100%) brightness(0.4) sepia(100%) hue-rotate(340deg) saturate(400%);
  
 }
-//contact us
+
 .telephone {
   margin-left: 220px;
   margin-top: 40px;
@@ -102,7 +102,7 @@ td:last-child {
   text-align: right;
 }
 
-//contactus
+
 .contactus-container {
   margin-left: 220px;
   margin-top: 40px;
@@ -532,7 +532,7 @@ color: #800;
 }
 
 
-// MAIN SLIDER START
+
 .main-slider{
   height: 70%;
 }
@@ -549,9 +549,7 @@ color: #800;
   align-content: center;
   justify-content: center;
 }
-// MAIN SLIDER END
 
-// LATEST NEWS START
 .news-img{
   height: 480px;
   object-fit: cover;
@@ -604,7 +602,7 @@ color: #800;
   background-color: #111;
 }
 
-// LATEST NEWS END
+
 
 @media screen and (max-width: 768px){
 
@@ -661,22 +659,22 @@ color: #800;
   color: #666666;
 }
 
-.nav-container, .nav2-container{
-  backdrop-filter: blur(2px) saturate(60%);
-
+.nav-container, .nav2-container {
+  backdrop-filter: blur(2px) saturate(90%) brightness(100%);
 }
+
 .nav2-container h2, .footer-links a{
   color: #666666;
 }
 
 .navbar-container{
-  background-image: url(/bg.jpg);
+  background-image: url(/navbarbackground.jpg);
 }
 
 .search{
   height: 28px;
   width: 175px;
-  border: .5px solid grey;
+  border: .5px solid black;
   border-bottom-left-radius: 2px;
   border-top-left-radius: 2px;
   padding-left: 10px;
@@ -686,7 +684,6 @@ color: #800;
 }
 
 
-// DROPDOWN
 
 .dropdown-container{
   display: none;
@@ -730,7 +727,7 @@ color: #800;
 
 @media screen and (max-width: 768px){
 
-  // NAV  
+
   .nav2-container{
       background-color: rgb(102, 22, 22);
       background-image: none;
@@ -874,7 +871,7 @@ color: #800;
     scroll-behavior: smooth;
 }
 
-// MAIN START
+
 
 .other-links{
     display: flex;
@@ -891,16 +888,17 @@ color: #800;
 }
 
 .icon-border{
+  width: 70px;
+  border-radius: 50%;
+  border: 3px solid #800;
+  transition: .2s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    border: 3px solid #800;
-    transition: .2s;
-    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
 }
 
 .other-links:hover{
@@ -995,7 +993,7 @@ color: #800;
     height:360px;
 }
 
-// WIDGETS
+
 
 .services-widget {
     position: fixed;
@@ -1047,8 +1045,8 @@ color: #800;
     z-index: 1;
 }
 
-.back-to-top {
-    // display: block;
+.top {
+   
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
@@ -1065,7 +1063,7 @@ color: #800;
     transition: .2s;
 }
 
-.back-to-top i {
+.top i {
     display: block;
     line-height: 48px;
     font-size: xx-large;
@@ -1142,7 +1140,7 @@ color: #800;
         border-radius: 20px;
     }
     .services-widget,
-    .back-to-top,
+    .top,
     .messenger{
         transform: scale(2.5);
         margin-right: 40px;
@@ -1154,7 +1152,7 @@ color: #800;
         bottom: 20vh;
     }
 }
-// MAIN END
+
 .footer-links{
   display: flex;
   flex-wrap: wrap;
@@ -1192,7 +1190,7 @@ color: #800;
 }
 
 .contact-us li{
-// footer
+
   color: #555555;
   width: auto;
 }

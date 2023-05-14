@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
-import { Services } from "src/components/floating-buttons/floatingbutton.js";
 export const Logos = [
   { src: "/transparencyseal.png", width: "100", height: "100" },
   { src: "/freedom-bg.png", width: "100", height: "100" },

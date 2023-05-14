@@ -47,10 +47,6 @@ function App() {
       <Articles articles={articles} />
       <Footer />
       <Footer2 />
-
-      <Link href="/" legacyBehavior>
-        <a>Home</a>
-      </Link>
     </div>
   );
 }

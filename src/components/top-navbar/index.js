@@ -39,7 +39,7 @@ const TopNavbar = () => {
         <div className="flex">
           <div className="flex flex-wrap content-center h-10 top-navbar-links">
             <ul className="flex inline text-3xl md:text-sm">
-              <li className="justify-center w-16">
+              <li className="justify-center w-17">
                 <a href="#" onClick={(e) => handleClick(e, "/")}>
                   <Image src="/govph.png" alt="" width={30} height={30} />
                 </a>
