@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const NavigationBar = ({ className }) => {
   return (
@@ -6,13 +7,17 @@ const NavigationBar = ({ className }) => {
       <nav className={className}>
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="#">Home</a>
+            <Link href="/redalert">
+              <a>Home</a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#">Red Alert</a>
           </li>
           <li className="nav-item">
-            <a href="#">Partnership</a>
+            <Link href="/partners">
+              <a>Partnership</a>
+            </Link>
           </li>
         </ul>
       </nav>

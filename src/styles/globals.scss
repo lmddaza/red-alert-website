@@ -2,6 +2,7 @@
 .navbar-container {
    
     background-color: #f2f2f2;
+   
     
   }
   
@@ -163,3 +164,40 @@
     text-align: center;
   }
   
+
+  //partnership
+  .container-partner {
+    border: 1px solid black;
+    padding: 20px;
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: #333;
+    
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .image-partner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 40ppx;
+    padding-top: 10px;
+  }
+  
+  .paragraph-partner {
+    text-align: justify;
+    padding-top: 10px;
+  }
+  
+  .content-wrapper {
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+   
+  }
+  .heading-partner {
+    text-align: center;
+  }
