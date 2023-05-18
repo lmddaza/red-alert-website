@@ -7,17 +7,13 @@ const NavigationBar = ({ className }) => {
       <nav className={className}>
         <ul className="nav-list">
           <li className="nav-item">
-            <Link href="/redalert">
-              <a>Home</a>
-            </Link>
+            <Link href="/redalert">Home</Link>
           </li>
           <li className="nav-item">
             <a href="#">Red Alert</a>
           </li>
           <li className="nav-item">
-            <Link href="/partners">
-              <a>Partnership</a>
-            </Link>
+            <Link href="/partners">Partnership</Link>
           </li>
         </ul>
       </nav>
