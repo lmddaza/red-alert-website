@@ -13,6 +13,7 @@ const Footer = () => {
           Red Alert: Microprocessor-Based Harmful Algal Bloom Detection and
           Monitoring System
         </p>
+        <h1>Hello</h1>
       </div>
     </footer>
   );
