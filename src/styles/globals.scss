@@ -183,7 +183,7 @@
   .image-partner {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 70%;
     height: 40ppx;
     padding-top: 10px;
     background-color: #f2f2f2;
@@ -191,8 +191,11 @@
   
   .paragraph-partner {
     text-align: justify;
-    padding-top: 10px;
+    padding-top: 20px;
+    white-space: pre-line;
+    text-indent: 50px;
   }
+
   
   .content-wrapper {
     padding-bottom: 20px;
