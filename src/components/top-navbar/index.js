@@ -10,7 +10,7 @@ const NavigationBar = ({ className }) => {
             <Link href="/redalert">Home</Link>
           </li>
           <li className="nav-item">
-            <a href="#">Red Alert</a>
+            <Link href="/portal">Red Alert Portal</Link>
           </li>
           <li className="nav-item">
             <Link href="/partners">Partnership</Link>
