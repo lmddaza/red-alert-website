@@ -15,7 +15,8 @@ const redalert = () => {
             style={{ width: '400px', height: '500px' }}
           />
         </div>
-        <div className="paragraph2">
+        <div className="paragraph-red-alert">
+          <div className="paragraph2">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet odio ac lacinia iaculis. Curabitur nisl dui, 
           tempus eget laoreet a, accumsan at mauris. Aliquam eget scelerisque quam, et ullamcorper ex. Vestibulum feugiat quis 
           nulla ac laoreet. Aenean aliquam id dolor ut congue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
@@ -41,6 +42,7 @@ Suspendisse cursus velit nec enim pellentesque, at imperdiet nisl commodo. Vivam
 quis nec turpis. Suspendisse ut mauris non mauris ornare gravida. Nunc posuere risus a justo imperdiet, nec dictum  <br></br>
 dolor efficitur. Maecenas non hendrerit tellus. Curabitur quis feugiat ligula, eget imperdiet magna. Sed varius mi nec  <br></br>
 orci semper euismod. Nulla blandit sodales ipsum. Aliquam quis dapibus libero. Etiam sollicitudin venenatis augue vel tempor.</p>
+        </div>
         </div>
       </div>
     </div>
