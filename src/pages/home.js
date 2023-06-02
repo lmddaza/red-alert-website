@@ -8,7 +8,6 @@ const HomePage = () => {
     <div>
       <NavigationBar className="custom-navbar" />
       <MyComponent />
-      <TwoColumnLayout />
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import NavigationBar from "src/components/top-navbar/index.js";
 
 const redalert = () => {
   return (
