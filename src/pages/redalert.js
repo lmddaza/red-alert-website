@@ -4,15 +4,12 @@ import MyComponent from "src/components/slider/slider.js";
 import TwoColumnLayout from "src/components/interactive-map/map.js";
 import Footer from "src/components/footer/footer.js";
 
-const HomePage = () => {
+const redalert = () => {
   return (
     <div>
-      <NavigationBar className="custom-navbar" />
-      <MyComponent />
-      <TwoColumnLayout />
-      <Footer />
+      <h1> this is red alert</h1>
     </div>
   );
 };
 
-export default HomePage;
+export default redalert;

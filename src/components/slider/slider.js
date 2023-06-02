@@ -1,18 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MyComponent = () => {
   return (
     <div className="image-container">
       <div className="image-wrapper">
         <Image
-          src="/bg.png"
+          src="/redalert.png"
           alt="Image Description"
           width={1200}
           height={300}
           className="image"
         />
-        <button className="learn-more-button">Learn More</button>
+        <Link href="/aboutUs">
+          <button className="learn-more-button">Learn More</button>
+        </Link>
       </div>
     </div>
   );
