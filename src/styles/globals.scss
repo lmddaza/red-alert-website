@@ -241,3 +241,35 @@
   .user-id {
     color: red;
   }
+  
+  //red-alert css
+  .full-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /* Additional styles as needed */
+  }
+
+  .photo-holder {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 100px;
+    margin-right: 100px; /* Adjust the spacing as needed */
+    z-index: 1; /* Ensure photo-holder is positioned above paragraph */
+  }
+  
+  .paragraph2 {
+    position: absolute;
+    white-space: pre-wrap;
+    text-align: justify;
+    padding-top: 20px;
+    white-space: pre-line;
+    text-indent: 100px;
+    left: 80px; /* Adjust the left position as needed */
+    top: 150px; /* Adjust the top position as needed */
+    
+  }
+  
