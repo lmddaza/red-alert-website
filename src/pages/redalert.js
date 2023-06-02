@@ -1,4 +1,5 @@
 import React from "react";
+
 import NavigationBar from "src/components/top-navbar/index.js";
 import MyComponent from "src/components/slider/slider.js";
 import Footer from "src/components/footer/footer.js";
@@ -7,6 +8,7 @@ const redalert = () => {
   return (
     <div className="full-page">
       <NavigationBar className="custom-navbar" />
+
       <h1>Red Alert</h1>
       <div className="content-container">
         <div className="photo-holder">
@@ -66,7 +68,6 @@ const redalert = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

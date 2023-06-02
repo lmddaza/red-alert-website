@@ -10,6 +10,7 @@ const HomePage = () => {
     <div>
       <NavigationBar className="custom-navbar" />
       <MyComponent />
+
       <ImageContainers />
 
       <Footer />
