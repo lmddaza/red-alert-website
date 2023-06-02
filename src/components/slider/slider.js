@@ -13,7 +13,7 @@ const MyComponent = () => {
           height={300}
           className="image"
         />
-        <Link href="/aboutUs">
+        <Link href="/redalert">
           <button className="learn-more-button">Learn More</button>
         </Link>
       </div>

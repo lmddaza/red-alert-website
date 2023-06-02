@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Calendar from "src/components/portal/calendar.js";
 
 const Table = () => {
   const rows = 6;
@@ -21,6 +22,7 @@ const Table = () => {
   return (
     <div className="table-container">
       <table className="custom-table">
+        <h1> Harmful Algal Bloom Advisory</h1>
         <tbody>
           {Array.from({ length: rows }, (_, rowIndex) => (
             <tr key={rowIndex}>
@@ -80,6 +82,9 @@ const Table = () => {
           ))}
         </tbody>
       </table>
+      <div className="calendar-container">
+        <Calendar /> {/* Render the Calendar component */}
+      </div>
     </div>
   );
 };
