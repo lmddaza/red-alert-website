@@ -303,9 +303,43 @@
   }
   
   
-  
-  
   .home-button:hover {
     background-color: #333;
   }
+
+  .photo-holder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo-holder img {
+    max-width: 100%;
+    margin-top: 20px;
+    height: auto;
+  }
+
+  //css for red alert
+  .content-container {
+    border: 1px solid black;
+    padding: 20px;
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: #333;
+    
+    margin: 0 auto;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .paragraph-red-alert {
+    text-align: justify;
+    padding-top: 20px;
+    white-space: pre-line;
+    text-indent: 50px;
+  }
+  
   
