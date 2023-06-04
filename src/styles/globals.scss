@@ -1,4 +1,13 @@
 //navbar
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.page-container {
+  background-color: #fff; /* Set the background color to white */
+}
+
 .navbar-container {
    
     background-color: #f2f2f2;
@@ -140,6 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f2f2f2;
   }
   
   .footer-content {
@@ -211,17 +221,26 @@
     text-align: center;
   }
 
-
-  //portal
+//portal
+  .portal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
   .table-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 40px;
+    gap: 50px;
+    margin-bottom: 30px;
   }
   
   .table-wrapper {
     margin-right: 20px;
+    
   }
   
   .calendar-container {
@@ -230,16 +249,16 @@
     align-items: center;
   }
   
-  
   .calendar-wrapper {
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
   }
-  
   
   .custom-table {
     border: 1px solid #000;
     border-collapse: collapse;
+    width: 50%;
+    height: 350px;
     margin-right: 20px; /* Add margin for spacing */
   }
   
@@ -258,7 +277,7 @@
   width: 100px;
   justify-content: center;
   }
-  
+ //portal ends 
  
   //fetching data
   .user-id {
@@ -309,3 +328,84 @@
     background-color: #333;
   }
   
+  //article and youtube
+  .yt {
+    margin-top: 40px;
+    margin-left: 190px;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .image-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
+    grid-gap: 20px; /* Add spacing between the two columns */
+    background-color: #f2f2f2;
+  }
+  
+  .article-container {
+    margin-right: 170px;
+    margin-top: 34px;
+    margin-left: 30px;
+  }
+  
+  .article-image {
+    width: 60px; /* Adjust the size as per your preference */
+    height: 360px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-top: 14px;
+  }
+  .line {
+    color: #948d5d;
+  }
+  
+  //portal legend
+  /* LegendTable.module.css */
+
+.legendTable {
+    color:#000;
+    margin-left: 180px;
+  }
+
+.legendLabel {
+  color:#000
+
+}
+.redDotIcon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  color: red;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 5px; // Adjust the margin as needed
+}
+
+.greenDotIcon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  color: #948d5d;
+  background-color:#948d5d;
+  border-radius: 50%;
+  margin-right: 5px; // Adjust the margin as needed
+}
+
+//output
+
+.result-container {
+  max-width: 600px;
+  
+  margin-left: 180px;
+  margin-top: 20px;
+}
+
+.box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  margin-top: 20px;
+}

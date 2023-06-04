@@ -22,7 +22,11 @@ const Table = () => {
   return (
     <div className="table-container">
       <table className="custom-table">
-        <h1> Harmful Algal Bloom Advisory</h1>
+        <thead>
+          <tr>
+            <th colSpan={columns}></th>
+          </tr>
+        </thead>
         <tbody>
           {Array.from({ length: rows }, (_, rowIndex) => (
             <tr key={rowIndex}>

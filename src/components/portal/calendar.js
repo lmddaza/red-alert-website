@@ -5,7 +5,11 @@ import "react-calendar/dist/Calendar.css";
 const CalendarComponent = () => {
   return (
     <div className="calendar-container">
-      <Calendar />
+      <div className="calendar-wrapper">
+        <h2>View Previous Advisories:</h2>
+        <br></br>
+        <Calendar />
+      </div>
     </div>
   );
 };
