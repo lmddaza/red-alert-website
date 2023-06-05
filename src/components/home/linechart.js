@@ -1,6 +1,14 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { Chart } from "chart.js/auto";
+import {
+  Chart,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+} from "chart.js/auto";
 
 Chart.register(Chart.registry.getScale("linear"));
 
