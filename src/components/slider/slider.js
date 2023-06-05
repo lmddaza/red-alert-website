@@ -10,7 +10,7 @@ const MyComponent = () => {
           src="/redalert.png"
           alt="Image Description"
           width={1200}
-          height={300}
+          height={200}
           className="image"
         />
         <Link href="/redalert">

@@ -10,10 +10,10 @@ const NavigationBar = ({ className }) => {
             <Link href="/home">Home</Link>
           </li>
           <li className="nav-item">
-            <Link href="/redalert">Red Alert </Link>
+            <Link href="/redalert">Red Alert</Link>
           </li>
           <li className="nav-item">
-            <Link href="/portal">Portal</Link>
+            <Link href="/portal">Stationary Portal</Link>
           </li>
           <li className="nav-item">
             <Link href="/partners">Partnership</Link>
@@ -22,6 +22,11 @@ const NavigationBar = ({ className }) => {
             <Link href="/aboutUs">About Us</Link>
           </li>
         </ul>
+        <div className="login-buttons">
+          <Link href="/login">
+            <button className="login-button">Login</button>
+          </Link>
+        </div>
       </nav>
     </div>
   );

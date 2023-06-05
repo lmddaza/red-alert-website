@@ -4,6 +4,117 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+//line chart
+ .line-chart-container {
+  width: 400px;
+  height: 250px;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+ }
+
+//announcement bulletin
+.announcement-bulletin {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 200px;
+}
+
+.bulletin-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.announcement {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 4px solid #333;
+}
+
+.announcement-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.announcement-description {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+// summary
+.summary {
+  
+  background-color: #f0f0f0;
+  
+  margin-left: 700px;
+margin-top: -350px;
+
+width: 600px;
+display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.sensor-card {
+  width: 200px;
+  background-color: #f0f0f0;
+  border-radius: 4px solid #000;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sensor-header {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sensor-readings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.reading-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reading-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.reading-value {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+//login
+.login-button {
+  background-color: #948d5d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  margin-left: 470px;
+
+}
+
+.login-buttons {
+  display: flex;
+  align-items: center;
+
+}
 .page-container {
   background-color: #fff; /* Set the background color to white */
 }
@@ -56,6 +167,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #f2f2f2;
+   
+   
   }
   
   .image-wrapper {
@@ -65,6 +178,8 @@
   .image {
     border: 1px solid #ccc;
     border-radius: 5px;
+    height: 300px;
+    
   }
   
   .learn-more-button {
@@ -144,6 +259,7 @@
   
   //footer
   .footer-container {
+    margin-top: 200px;
     border-top: 1px solid #ccc;
     padding: 20px;
     display: flex;
@@ -358,6 +474,8 @@
   }
   .line {
     color: #948d5d;
+    border-bottom: 3px solid #948d5d;
+
   }
   
   //portal legend
