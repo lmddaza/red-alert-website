@@ -1,11 +1,13 @@
 import React from "react";
-import { NextSeo } from "next-seo";
 import NavigationBar from "src/components/top-navbar/index.js";
 import MyComponent from "src/components/slider/slider.js";
-import ImageContainers from "src/components/home/home.js";
-import Footer from "src/components/footer/footer.js";
-import Articles from "src/components/home/yt.js";
 
+import Footer from "src/components/footer/footer.js";
+
+import AnnouncementBulletin from "src/components/home/announcement.js";
+import Summary from "src/components/home/summary.js";
+
+import LineChart from "src/components/home/linechart.js";
 const HomePage = () => {
   const SEO = {
     title: "Red Alert",
@@ -19,20 +21,18 @@ const HomePage = () => {
     },
     // You can add more SEO configurations as needed
   };
-
   return (
-    <>
-      <NextSeo {...SEO} />
-      <div className="page-container">
-        <NavigationBar className="custom-navbar" />
-        <MyComponent />
+    <div className="page-container">
+      <NavigationBar className="custom-navbar" />
+      <MyComponent />
+      <AnnouncementBulletin />
 
-        <ImageContainers />
-        <Articles />
+      <LineChart />
+      <Summary />
+      <br></br>
 
-        <Footer />
-      </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 
