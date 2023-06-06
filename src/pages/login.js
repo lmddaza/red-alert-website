@@ -1,22 +1,84 @@
-import React from "react";
+import React, { useState } from "react";
+import Link from "next/link";
 
 const LoginSignupPage = () => {
-  const SEO = {
-    title: "Red Alert",
-    description: "Your website description",
-    openGraph: {
-      title: "Your Website Title",
-      description: "Your website description",
-      type: "website",
-      url: "https://www.yourwebsite.com",
-      site_name: "Your Website Name",
-    },
-    // You can add more SEO configurations as needed
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
   };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleRememberMeChange = (e) => {
+    setRememberMe(e.target.checked);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Perform login or signup logic here
+    console.log("Email:", email);
+    console.log("Password:", password);
+    console.log("Remember Me:", rememberMe);
+    // Reset form fields
+    setEmail("");
+    setPassword("");
+  };
+
   return (
-    <div className="login-signup-container">
-      <h1>Login or Sign Up</h1>
-      {/* Your login/signup form elements go here */}
+    <div className="login-page">
+      <div className="login-signup-container">
+        <form onSubmit={handleFormSubmit}>
+          <div className="form-group">
+            <label htmlFor="email"></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="password"></label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              value={password}
+              onChange={handlePasswordChange}
+              required
+            />
+          </div>
+
+          <div className="form-group forgot-password">
+            <Link href="/forgot-password">Forgot Password?</Link>
+          </div>
+
+          <div className="form-group remember-me">
+            <label>
+              <input
+                type="checkbox"
+                checked={rememberMe}
+                onChange={handleRememberMeChange}
+              />
+              Remember Me
+            </label>
+          </div>
+          <div className="form-group">
+            <Link href="/home">
+              <button type="submit" className="loginpage-button">
+                Login
+              </button>
+            </Link>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

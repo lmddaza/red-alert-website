@@ -7,6 +7,7 @@ import RiskProbability from "src/components/portal/legend.js";
 import Footer from "src/components/footer/footer.js";
 import Table from "src/components/portal/portal.js";
 import IndexPage from "src/components/portal/data-readings.js";
+import MobileReadings from "src/components/portal/mobileReadings.js";
 
 const HomePage = () => {
   const SEO = {
@@ -27,6 +28,12 @@ const HomePage = () => {
       <Table />
       <RiskProbability />
       <IndexPage />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <MobileReadings />
       <br></br>
       <Footer />
     </div>
