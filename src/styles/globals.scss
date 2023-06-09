@@ -4,10 +4,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-//mobile-readings
-.mobile-summary{
-  margin-left: 500px;
-}
+
 
 //login page
 .login-page {
@@ -180,7 +177,7 @@ display: flex;
 
 //login
 .login-button {
-  background-color: #948d5d;
+  background-color:#948d5d ;
   color: white;
   border: none;
   border-radius: 4px;
@@ -214,45 +211,6 @@ display: flex;
   background-color: #fff; /* Set the background color to white */
 }
 
-.navbar-container {
-   
-    background-color: #f2f2f2;
-   
-    
-  }
-  
-  .custom-navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 150px;
-    gap: 30px;
-    :hover {
-      color: #948d5d;
-    }
-  }
-  
-  .nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .nav-item a {
-    text-decoration: none;
-    color: #333;
-  }
-  .custom-navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 5px solid #333;
-  }
 
   //display image
   .image-container {
@@ -401,7 +359,7 @@ display: flex;
     
     margin: 0 auto;
     padding-top: 20px;
-    background-color: #f2f2f2;
+   
     margin-top: 30px;
     margin-bottom: 20px;
   }
@@ -412,7 +370,7 @@ display: flex;
     max-width: 70%;
     height: 40ppx;
     padding-top: 10px;
-    background-color: #f2f2f2;
+   
   }
   
   .paragraph-partner {
@@ -425,30 +383,14 @@ display: flex;
   
   .content-wrapper {
     padding-bottom: 20px;
-    background-color: #f2f2f2;
+   
    
   }
   .heading-partner {
     text-align: center;
   }
 
-//portal
-  .portal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .table-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 50px;
-    margin-bottom: 30px;
-  }
-  
+//portal  
   .table-wrapper {
     margin-right: 20px;
     
@@ -465,29 +407,7 @@ display: flex;
     width: 100%;
   }
   
-  .custom-table {
-    border: 1px solid #000;
-    border-collapse: collapse;
-    width: 50%;
-    height: 350px;
-    margin-right: 20px; /* Add margin for spacing */
-  }
-  
  
-  .custom-table td {
-    border: 1px solid #000;
-    padding: 8px;
-  }
-  
-  .bold-row {
-    background-color: #948d5d;
-    font-weight: bold;
-  }
-  .get-button {
-    color: #000;
-  width: 100px;
-  justify-content: center;
-  }
  //portal ends 
  
   //fetching data
@@ -521,8 +441,7 @@ display: flex;
   }
   .home-button {
     padding: 10px 20px;
-    background-color: #948d5d;
-    color: #ffffff;
+   
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -538,87 +457,9 @@ display: flex;
   }
 
   
-  //article and youtube
-  .yt {
-    margin-top: 40px;
-    margin-left: 190px;
-    width: 600px;
-    height: 400px;
-    margin-bottom: 20px;
-  }
   
-  .image-containers {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide the container into two equal columns */
-    grid-gap: 20px; /* Add spacing between the two columns */
-    background-color: #f2f2f2;
-  }
-  
-  .article-container {
-    margin-right: 170px;
-    margin-top: 34px;
-    margin-left: 30px;
-  }
-  
-  .article-image {
-    width: 60px; /* Adjust the size as per your preference */
-    height: 360px;
-    margin-bottom: 20px;
-    margin-right: 40px;
-    margin-top: 14px;
-  }
-  .line {
-    color: #948d5d;
-    border-bottom: 3px solid #948d5d;
-
-  }
   
   //portal legend
-  /* LegendTable.module.css */
-
-.legendTable {
-    color:#000;
-    margin-left: 180px;
-  }
-
-.legendLabel {
-  color:#000
-
-}
-.redDotIcon {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  color: red;
-  background-color: red;
-  border-radius: 50%;
-  margin-right: 5px; // Adjust the margin as needed
-}
-
-.greenDotIcon {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  color: #948d5d;
-  background-color:#948d5d;
-  border-radius: 50%;
-  margin-right: 5px; // Adjust the margin as needed
-}
 
 //output
-
-.result-container {
-  max-width: 600px;
-  
-  margin-left: 180px;
-  margin-top: 20px;
-}
-
-.box {
-  border: 1px solid #000;
-  border-radius: 10px;
-  padding: 20px;
-  width: 200px;
-  margin-top: 20px;
-}
 

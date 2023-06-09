@@ -3,7 +3,6 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <br></br>
       <div className="footer-content">
         <div className="logo-container">
           <img src="/BFARLOGO.png" alt="Logo 1" className="logo" />

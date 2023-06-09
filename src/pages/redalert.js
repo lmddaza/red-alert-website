@@ -1,8 +1,9 @@
 import React from "react";
 import NavigationBar from "src/components/top-navbar/index.js";
 import Footer from "src/components/footer/footer.js";
-import ImageContainers from "src/components/home/home.js";
-import Articles from "src/components/home/yt.js";
+import ImageContainers from "src/components/red-alert/yt.js";
+import Tubo from "src/components/red-alert/hardware.js";
+
 const redalert = () => {
   const SEO = {
     title: "Red Alert",
@@ -17,11 +18,11 @@ const redalert = () => {
     // You can add more SEO configurations as needed
   };
   return (
-    <div className="full-page">
+    <div style={{ backgroundColor: "white" }}>
       <NavigationBar className="custom-navbar" />
       <br></br>
+      <Tubo />
       <ImageContainers />
-      <Articles />
 
       <Footer />
     </div>

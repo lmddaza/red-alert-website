@@ -19,7 +19,7 @@ const Partners = () => {
     // You can add more SEO configurations as needed
   };
   return (
-    <div>
+    <div style={{ backgroundColor: "white" }}>
       <NavigationBar className="custom-navbar" />
       <PartnershipPage />
 

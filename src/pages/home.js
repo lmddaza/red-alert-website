@@ -6,6 +6,7 @@ import Footer from "src/components/footer/footer.js";
 
 import AnnouncementBulletin from "src/components/home/announcement.js";
 import Summary from "src/components/home/summary.js";
+import Design from "src/components/home/design.js";
 
 import LineChart from "src/components/home/linechart.js";
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
       <NavigationBar className="custom-navbar" />
       <MyComponent />
       <AnnouncementBulletin />
+      <Design />
 
       <LineChart />
       <Summary />
